@@ -173,8 +173,50 @@ def goodsType_add(request):
         t.parent_id = parent_type
         t.description = type_description
         t.save()
-
+        return HttpResponseRedirect("/seller/tList/")
     return render(request,"seller/goodsType_add.html",locals())
+
+def goodsType_change(request,id):
+    """
+    id为0即为主类型
+    """
+    types = Types.objects.all()
+    typeData = Types.objects.get(id = int(id))
+    lables = "update"
+    if request.method == "POST" and request.POST:
+        type_name = request.POST.get("type_name")
+        parent_type = request.POST.get("parent_type")
+        type_description = request.POST.get("type_description")
+
+        if parent_type == "parent":
+            parent_type = 0
+        else:
+            parent_type = int(parent_type)
+
+        typeData.label = type_name
+        typeData.parent_id = parent_type
+        typeData.description = type_description
+        typeData.save()
+        return HttpResponseRedirect("/seller/tList/")
+    return render(request,"seller/goodsType_add.html",locals())
+
+def goodsType_del(request,id):
+    """
+    id为0即为主类型
+    """
+    typeData = Types.objects.get(id = int(id)).delete()
+    return HttpResponseRedirect("/seller/tList/")
+
+def goodsType_list(request):
+    all_type = Types.objects.order_by("-id")
+    tList = []
+    for t in all_type:
+        if t.parent_id != 0:
+            label = Types.objects.get(id=int(t.parent_id)).label
+        else:
+            label = "主类型"
+        tList.append({"id":t.id,"label":t.label,"parent_id": t.parent_id,"parent":label,"description":t.description})
+    return render(request,"seller/typeList.html",{"all_type":tList})
 
 @cookieValid
 def goods_list(request):

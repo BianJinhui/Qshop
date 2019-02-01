@@ -24,7 +24,7 @@
               </label>
               <div class="layui-input-inline">
                   <input type="text" id="Type_name" name="type_name" required=""
-                  autocomplete="off" class="layui-input">
+                  autocomplete="off" class="layui-input" value="{{ typeData.label }}">
               </div>
           </div>
           <div class="layui-form-item">
@@ -34,9 +34,17 @@
               <div class="layui-input-inline">
                     <select name="parent_type">
                         {% for t in types %}
+                            {% ifequal typeData.parent_id t.id %}
+                            <option value="{{ t.id }}"  selected = "selected">{{ t.label }}</option>
+                            {% else %}
                             <option value="{{ t.id }}">{{ t.label }}</option>
+                            {% endifequal %}
                         {% endfor %}
-                        <option value="parent" selected = "selected">主类型</option>
+                            {% ifequal typeData.parent_id 0 %}
+                                <option value="parent" selected = "selected">主类型</option>
+                            {% else %}
+                                <option value="parent">主类型</option>
+                            {% endifequal %}
                     </select>
               </div>
           </div>
@@ -46,13 +54,17 @@
                   <span class="x-red">*</span>类型描述
               </label>
               <div class="layui-input-inline"  style="width: 900px;" >
-                <textarea name="type_description" autocomplete="off" style="width: 210px; height: 80px;"></textarea>
+                <textarea name="type_description" autocomplete="off" style="width: 210px; height: 80px;">{{ typeData.description }}</textarea>
               </div>
           </div>
           <div class="layui-form-item">
               <label for="L_repass" class="layui-form-label">
               </label>
+              {% if lables %}
+              <input type="submit" class="layui-btn" lay-filter="add" value="修改类型">
+              {% else %}
               <input type="submit" class="layui-btn" lay-filter="add" value="增加类型">
+              {% endif %}
           </div>
       </form>
     </div>
