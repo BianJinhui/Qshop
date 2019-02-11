@@ -5,6 +5,9 @@ from Seller.models import Goods
 
 from alipay import AliPay
 
+def register_store(request):
+    return render(request,"buyer/openstore.html")
+
 def Pay(order_id,money):
     alipay_public_key_string = '''-----BEGIN PUBLIC KEY-----
         MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsLDofX93PGVStfpI4/R3mX22p7EWct0b9TutpGrj/XnukV+ZtkBUez7t6IKa13nBOuMM1RMeUw06FHAX6xhoHK/Uf4HRZmV718M/JTodrsucEKe9OUNDcOPIjPooqLim2W6m7FW/XRLcZFK8yasEDNoCj7W6UPdwBnCvTCpPLOur+lNmgPTEGQRo+5qvcNEKYKJHeZEOzwGTUzyT+fT3LIISLgAK/vKjNg9m2mMlKuT47M1nNpOnaI4sp2SVzQ6Lx/STg301SOmxyvVFM2Uq4hksyIw1xdVa0rDH5vBU+C/M0AfYx8rOOkDB6TyechoDOqOPAXKZ22Zk/Ms/alJxAwIDAQAB

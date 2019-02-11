@@ -15,4 +15,5 @@ urlpatterns = [
     path('addAddress/', addAddress),
     re_path('changeAddress/(?P<address_id>\d+)/', changeAddress),
     re_path('delAddress/(?P<address_id>\d+)/', delAddress),
+    path('register_store/', register_store)
 ]

@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'Seller',
     'Buyer',
     'ckeditor',
-    'ckeditor_uploader'
+    'ckeditor_uploader',
 ]
 
 MIDDLEWARE = [
