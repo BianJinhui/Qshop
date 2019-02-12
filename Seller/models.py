@@ -12,6 +12,7 @@ class Seller(models.Model):
     username = models.CharField(max_length = 32)
     password = models.CharField(max_length = 32)
     nickname = models.CharField(max_length = 32)
+    sellername = models.CharField(max_length = 32)
     photo = models.ImageField(upload_to = "image")
     phone = models.CharField(max_length = 32)
     address = models.CharField(max_length = 32)

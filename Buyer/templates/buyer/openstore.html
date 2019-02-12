@@ -8,8 +8,8 @@
         </p>
         <p>卖家免费开店</p>
         <div class="store_box">
-        <form method="post" action="" >
-           
+        <form method="post" action="" enctype="multipart/form-data">
+            {% csrf_token %}
             <div class="line">
                 <label>用户名称</label>
                 <input type="text" name="username" class="input" />

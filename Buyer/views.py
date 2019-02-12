@@ -2,10 +2,40 @@ from django.shortcuts import render,HttpResponseRedirect,HttpResponse
 from Buyer.models import Buyer
 from Seller.views import setPassword
 from Seller.models import Goods
-
 from alipay import AliPay
-
+from Seller.models import Seller
+import os
+from Qshop.settings import MEDIA_ROOT
 def register_store(request):
+    if request.method == "POST" and request.POST:
+        data = request.POST
+        file = request.FILES
+        username = data.get("username")
+        shop_name = data.get("shop_name")
+        nickname = data.get("nicheng")
+        shop_address = data.get("shop_address")
+        shop_logo = file.get("shop_logo")
+
+        # 保存图片到服务器
+        file_name = shop_logo.name
+        file_path = "seller/images/%s.%s" % (shop_name,file_name.rsplit(".", 1)[1])
+        save_path = os.path.join(MEDIA_ROOT, file_path).replace("/", "\\")
+        try:
+            with open(save_path, "wb") as f:
+                for chunk in shop_logo.chunks(chunk_size=1024):
+                    f.write(chunk)
+        except Exception as e:
+            print(e)
+        user_id = request.COOKIES.get("user_id")
+        user = Buyer.objects.get(id = user_id)
+        seller = Seller()
+        seller.username = username
+        seller.sellername = shop_name
+        seller.nickname = nickname
+        seller.address = shop_address
+        seller.photo = file_name
+        seller.password = user.password
+        seller.save()
     return render(request,"buyer/openstore.html")
 
 def Pay(order_id,money):
@@ -91,12 +121,9 @@ def register(request):
         return HttpResponseRedirect("/login/")
     return render(request,'buyer/register.html')
 
-
-
 # def register_phone(request):
 #
 #     return render(request,'buyer/register.html')
-
 
 def logout(request):
     response = HttpResponseRedirect("/login/")
