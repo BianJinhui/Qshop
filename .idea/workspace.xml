@@ -53,11 +53,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Buyer/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="31" column="34" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="34" />
+            <state relative-caret-position="-508">
+              <caret line="16" column="24" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="24" />
               <folding>
                 <element signature="e#0#69#0" expanded="true" />
                 <element signature="e#307#3156#0" />
@@ -70,19 +70,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/django/core/handlers/base.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="157" selection-start-line="157" selection-end-line="157" />
+        <entry file="das://dc49fe7c-f9bc-4545-b00b-d7f3b2da04b4/schema/main/table/Seller_seller">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="das://dc49fe7c-f9bc-4545-b00b-d7f3b2da04b4/schema/main/table/Seller_seller">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+        <entry file="file://$PROJECT_DIR$/Seller/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="13" column="48" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="13" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Buyer/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="30" column="13" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -187,10 +196,11 @@
         <option value="$PROJECT_DIR$/Seller/models.py" />
         <option value="$PROJECT_DIR$/Buyer/templates/buyer/openstore.html" />
         <option value="$PROJECT_DIR$/Buyer/views.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="337" />
     <option name="y" value="28" />
     <option name="width" value="1383" />
@@ -213,19 +223,6 @@
               <item name="Qshop" type="b2602c69:ProjectViewProjectNode" />
               <item name="Qshop" type="462c0819:PsiDirectoryNode" />
               <item name="Buyer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Qshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Qshop" type="462c0819:PsiDirectoryNode" />
-              <item name="Buyer" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Qshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Qshop" type="462c0819:PsiDirectoryNode" />
-              <item name="Buyer" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="buyer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Qshop" type="b2602c69:ProjectViewProjectNode" />
@@ -463,24 +460,24 @@
       <workItem from="1548982361381" duration="6569000" />
       <workItem from="1548999744047" duration="11365000" />
       <workItem from="1549846746721" duration="7879000" />
-      <workItem from="1549933565498" duration="1539000" />
+      <workItem from="1549933565498" duration="3432000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48891000" />
+    <option name="totallyTimeSpent" value="50784000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.19894099" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19894099" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.42973855" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3872549" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.28267974" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -494,7 +491,7 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.1452345" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.1452345" />
       <window_info anchor="right" id="Data View" order="4" weight="0.32980332" />
       <window_info anchor="right" id="SciView" order="5" weight="0.32980332" />
     </layout>
@@ -529,13 +526,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Buyer/views.py</url>
-          <line>10</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -581,13 +571,6 @@
           <folding>
             <element signature="e#629#661#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Buyer/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -802,13 +785,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Seller/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="15" column="50" lean-forward="true" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Buyer/templates/buyer/enterOrder.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
@@ -842,17 +818,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://dc49fe7c-f9bc-4545-b00b-d7f3b2da04b4/schema/main/table/Seller_seller">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Buyer/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="31" column="34" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="34" />
+        <state relative-caret-position="-508">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="24" />
           <folding>
             <element signature="e#0#69#0" expanded="true" />
             <element signature="e#307#3156#0" />
@@ -860,6 +829,27 @@
             <element signature="e#4026#4828#0" />
             <element signature="e#4857#5220#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://dc49fe7c-f9bc-4545-b00b-d7f3b2da04b4/schema/main/table/Seller_seller">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seller/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="13" column="48" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="13" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Buyer/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="13" />
         </state>
       </provider>
     </entry>
